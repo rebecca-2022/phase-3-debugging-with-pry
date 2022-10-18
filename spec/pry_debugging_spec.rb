@@ -1,3 +1,5 @@
+
+
 require 'pry'
 require './lib/pry_debugging.rb'
 
@@ -6,4 +8,10 @@ describe "#plus_two" do
 		expect(plus_two(3)).to eq(5)
 	end
 
+end
+
+def plus_two(num)
+    num + 2
+    #binding.pry
+	
 end
